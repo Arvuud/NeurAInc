@@ -10,8 +10,10 @@
     <dependencies>
         <dependency>
             <groupId>nz.ac.waikato.cms.weka</groupId>
-            <artifactId>weka-stable</artifactId>
-            <version>3.8.5</version>
+            <artifactId>weka-dev</artifactId>
+            <version>3.9.6</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/weka.jar</systemPath>
         </dependency>
     </dependencies>
     <properties>
