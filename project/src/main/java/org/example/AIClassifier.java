@@ -4,39 +4,45 @@ import weka.classifiers.trees.J48;
 import weka.core.DenseInstance;
 import weka.core.Instance;
 import weka.core.Instances;
+import weka.core.converters.CSVLoader;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 
 public class AIClassifier {
-    public int classify(String inputString) {
+    public String classify(String inputString) {
         try {
-            BufferedReader reader = new BufferedReader(new FileReader("data/training_data.csv"));
-            Instances train = new Instances(reader);
+            CSVLoader loader = new CSVLoader();
+            loader.setSource(new File("data/training_data.csv"));
+            loader.setFieldSeparator(";");  // Semikolon als Trenner
+            Instances train = loader.getDataSet();
             train.setClassIndex(train.numAttributes() - 1);
-            reader.close();
 
             J48 tree = new J48();
             tree.buildClassifier(train);
 
+            // Hier müsstest du den inputString in eine Instance umwandeln
+            // Das hängt von deinem Datenformat ab
             Instance instance = createInstanceFromString(inputString, train);
 
             double clsLabel = tree.classifyInstance(instance);
-            return (int) clsLabel;
+            return train.classAttribute().value((int) clsLabel);
 
         } catch(Exception e) {
             e.printStackTrace();
-            return -1;
+            return "error"; // Fehlerfall
         }
     }
 
-    // Hilfsmethode - musst du je nach Datenformat implementieren
+    // Hilfsmethode für Text-Input
     private Instance createInstanceFromString(String input, Instances dataset) {
-        // Diese Methode musst du entsprechend deinem Datenformat implementieren
-        // Beispiel für einfachen Fall:
         Instance instance = new DenseInstance(dataset.numAttributes());
         instance.setDataset(dataset);
-        // Hier würdest du die Werte aus dem inputString parsen und setzen
+
+        // Setze den Text in das erste Attribut
+        instance.setValue(0, input);
+
         return instance;
     }
 }

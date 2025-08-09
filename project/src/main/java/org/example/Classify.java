@@ -9,13 +9,13 @@ import java.io.FileReader;
 import java.io.FileWriter;
 
 public class Classify {
-    public void classify(String trainingData, String testData) {
+    public static void main(String[] args){
         try{
-            BufferedReader reader = new BufferedReader(new FileReader(trainingData));
+            BufferedReader reader = new BufferedReader(new FileReader("data/training.arff"));
             Instances train = new Instances(reader);
             train.setClassIndex(train.numAttributes() - 1);
 
-            reader = new BufferedReader(new FileReader(testData));
+            reader = new BufferedReader(new FileReader("data/test_data.csv"));
             Instances test = new Instances(reader);
             test.setClassIndex(test.numAttributes() - 1);
 
@@ -30,7 +30,7 @@ public class Classify {
                 classified.instance(i).setClassValue(clsLabel);
             }
 
-            BufferedWriter writer = new BufferedWriter(new FileWriter("data/labeled"));
+            BufferedWriter writer = new BufferedWriter(new FileWriter("data/labeled.csv"));
             writer.write(classified.toString());
         } catch(Exception e){
             e.printStackTrace();
