@@ -1,17 +1,19 @@
 package org.example;
 
-import weka.core.Instances;
-import weka.classifiers.Evaluation;
-
-import java.util.Random;
-
 import weka.core.*;
 import weka.core.converters.CSVLoader;
+import weka.core.converters.ConverterUtils.DataSource;
 import weka.classifiers.functions.MultilayerPerceptron;
+import weka.classifiers.Evaluation;
 import weka.filters.Filter;
 import weka.filters.unsupervised.attribute.StringToWordVector;
+import weka.filters.unsupervised.attribute.Remove;
 
 import java.io.File;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.Random;
 
 public class WekaStringClassifier {
 
@@ -23,12 +25,17 @@ public class WekaStringClassifier {
     public void trainModel(String csvFilePath) throws Exception {
         System.out.println("Lade Trainingsdaten...");
 
-        // 1. CSV-Datei laden
+        // 1. CSV-Datei laden (einfacher da keine Kommas im Text)
         CSVLoader loader = new CSVLoader();
         loader.setSource(new File(csvFilePath));
+        loader.setNoHeaderRowPresent(true); // Keine Header-Zeile
         Instances data = loader.getDataSet();
 
-        // 2. Klassenattribut setzen (letzte Spalte = malicious/positive)
+        // 2. Attribute benennen
+        data.renameAttribute(0, "text");
+        data.renameAttribute(1, "class");
+
+        // 3. Klassenattribut setzen (letzte Spalte = malicious/positive)
         data.setClassIndex(data.numAttributes() - 1);
 
         System.out.println("Anzahl Instanzen: " + data.numInstances());
@@ -42,7 +49,7 @@ public class WekaStringClassifier {
         stringFilter.setWordsToKeep(1000); // Top 1000 Wörter behalten
         stringFilter.setMinTermFreq(1);     // Minimale Worthäufigkeit
         stringFilter.setLowerCaseTokens(true); // Kleinbuchstaben
-        stringFilter.stemmerTipText();  // Stopwörter entfernen
+        // Stoplist in neueren Weka-Versionen nicht mehr verfügbar
 
         // Filter anwenden
         Instances filteredData = Filter.useFilter(data, stringFilter);
@@ -135,10 +142,10 @@ public class WekaStringClassifier {
 
             // Test-Klassifikationen
             String[] testStrings = {
-                    "This is a normal message",
-                    "Click here to win money now!!!",
-                    "Meeting scheduled for tomorrow",
-                    "URGENT: Your account will be suspended"
+                    "Congratulations You've been selected for an exclusive offer",
+                    "Thank you for your email, we will respond soon",
+                    "URGENT: Click now or lose this opportunity forever",
+                    "Meeting scheduled for next Tuesday at 2 PM"
             };
 
             System.out.println("\n=== Test-Klassifikationen ===");
