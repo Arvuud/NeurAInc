@@ -9,9 +9,9 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 
 public class AIClassifier {
-    public int classify(String trainingData, String inputString) {
+    public int classify(String inputString) {
         try {
-            BufferedReader reader = new BufferedReader(new FileReader(trainingData));
+            BufferedReader reader = new BufferedReader(new FileReader("data/training_data.csv"));
             Instances train = new Instances(reader);
             train.setClassIndex(train.numAttributes() - 1);
             reader.close();

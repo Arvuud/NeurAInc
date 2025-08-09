@@ -2,17 +2,12 @@ package org.example;
 
 import weka.core.*;
 import weka.core.converters.CSVLoader;
-import weka.core.converters.ConverterUtils.DataSource;
 import weka.classifiers.functions.MultilayerPerceptron;
 import weka.classifiers.Evaluation;
 import weka.filters.Filter;
 import weka.filters.unsupervised.attribute.StringToWordVector;
-import weka.filters.unsupervised.attribute.Remove;
 
 import java.io.File;
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.util.ArrayList;
 import java.util.Random;
 
 public class WekaStringClassifier {
