@@ -1,1 +1,34 @@
-test
+Congratulations! You've been selected for an exclusive offer,malicious
+Hi there this is [Name] from [Company]. We have a special deal just for you,malicious
+This is an important message regarding your account security,malicious
+You've won a free vacation! Press 1 to claim your prize,malicious
+We noticed some suspicious activity on your account. Please verify your details,malicious
+This is your final notice to claim your reward,malicious
+Hello this is [Name] from the IRS. We need to discuss your tax status,malicious
+You are eligible for a low-interest credit card offer,malicious
+This is an urgent call about your computer's security,malicious
+We have an amazing investment opportunity just for you,malicious
+You've been pre-approved for a loan. Press 2 to speak with an agent,malicious
+This is [Name] from Microsoft Support. Your computer has been compromised,malicious
+You've won a free gift card! Just answer a few questions to claim it,malicious
+This is an important message about your warranty expiring soon,malicious
+Hello, this is [Name] from [Tech Company]. We need to update your software,malicious
+You've been selected for a government grant. Press 1 to proceed,malicious
+This is an urgent message about your social security number,malicious
+We have a special offer on insurance plans just for you,malicious
+This is [Name] from [Bank]. There's been unusual activity on your account,malicious
+You've won a free cruise! Just pay the port fees to claim it,malicious
+This is an important message about your health insurance,malicious
+Hello, this is [Name] from [Charity]. We need your donation today,malicious
+You've been selected for a free trial of our product,malicious
+This is [Name] from [Company]. We need to confirm your personal details,malicious
+You've won a free shopping spree! Press 1 to claim your prize now,malicious
+This is Elon Musk. I'm giving away free Teslas to random people. You're one of them,malicious
+You've inherited a castle in Scotland. Please provide your details to claim it,malicious
+You've won a lifetime supply of chocolate. Press 1 to claim your delicious prize,malicious
+You've been selected to be the next queen of a tropical island,malicious
+This is a call from the International Space Station. We have an offer you can't refuse,malicious
+Hi this is Sarah from customer service. How are you doing today,malicious
+Hello, we're offering a limited-time discount on our products just for you,malicious
+This is Mark from tech support. We've detected a virus on your computer,malicious 
+
