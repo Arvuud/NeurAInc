@@ -10,7 +10,7 @@ import java.util.Random;
 public class WekaExample {
     public static void main(String[] args) throws Exception {
         // Daten laden
-        DataSource source = new DataSource("path/to/your/data.arff");
+        DataSource source = new DataSource("data/");
         Instances data = source.getDataSet();
 
         // Klassenattribut setzen (letztes Attribut)
