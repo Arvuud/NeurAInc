@@ -53,4 +53,57 @@ Hello this is Harper from the retail services You have a special discount waitin
 Hi there this is Elijah from the entertainment services You've won free tickets to a show;malicious
 Hello this is Abigail from the legal services We need to discuss an important matter with you;malicious
 Hi this is Benjamin from the real estate services We have a great property deal for you;malicious
-
+Urgent;malicious
+Immediate action required;malicious
+Final notice;malicious
+Your account will be suspended;malicious
+Lawsuit filed against you;malicious
+Your Social Security number has been compromised;malicious
+You are under investigation;malicious
+Your bank account will be frozen;malicious
+Unpaid balance;malicious
+Overdue payment;malicious
+Refund;malicious
+Claim your prize;malicious
+You’ve won the lottery;malicious
+Compensation;malicious
+IRS / Revenue Service;malicious
+Bank account verification;malicious
+Wire transfer;malicious
+Bitcoin;malicious
+Crypto wallet;malicious
+Do not hang up;malicious
+Keep this confidential;malicious
+Verify your identity;malicious
+We need your PIN/password;malicious
+Please confirm your full name address and date of birth;malicious
+Police Department;malicious
+FBI;malicious
+CIA;malicious
+Court officer;malicious
+IRS agent;malicious
+CRA officer;malicious
+Amazon;malicious
+PayPal;malicious
+Microsoft;malicious
+Apple Support;malicious
+Free vacation;malicious
+Congratulations;malicious
+No strings attached;malicious
+Limited-time offer;malicious
+Risk-free trial;malicious
+Back taxes;malicious
+Arrest warrant;malicious
+Tax evasion;malicious
+Your computer is infected;malicious
+Remote access;malicious
+Firewall;malicious
+Sweepstakes;malicious
+Claim your prize;malicious
+Processing fee;malicious
+Account locked;malicious
+Verify identity;malicious
+Suspicious activity;malicious
+SSN suspended;malicious
+Identity theft;malicious
+Legal enforcement;malicious
