@@ -1,6 +1,6 @@
 # NeurAInc – Voice Scam Shield
 
-Built in 24 hours at the Global AI Hackathon 2025. The goal: warn people about scam calls **while** they’re still on the line, without sending any audio to the cloud.
+Built in 24 hours at the Global AI Hackathon 2025. Goal: warn people about scam calls **while** they’re still on the line, without sending audio to the cloud.
 
 ## What it does
 - Listens through the mic
@@ -8,14 +8,21 @@ Built in 24 hours at the Global AI Hackathon 2025. The goal: warn people about s
 - Classifies each transcript chunk as "malicious" or "positive"
 - Prints a warning in the terminal during the call
 
-Right now it’s English-only and catches common scam language from our dataset.
+## Languages (current)
+- English 
+- German 
+- More languages can be added by dropping the corresponding Vosk model into `App/model/` and pointing the loader to it.
+
+## Quick try
+Say: “This is Microsoft Support. Your account is at risk. Press 1.”  
+Or in German: “Hier ist der Microsoft-Support. Ihr Konto ist gefährdet. Drücken Sie die 1.”  
+You should see a **malicious** warning in the terminal.
 
 ## Why
-Scam calls often only need 30–45 seconds to push someone into a bad decision.  
-We wanted something simple that can interrupt that script before it’s too late.
+Scam calls use speed, pressure, and noise to push fast decisions. This project aims to interrupt the script in the moment, not after.
 
 ## How it works
-- `App/SpeechToText.py` – uses Vosk (large and small EN models)
+- `App/SpeechToText.py` – Vosk models (EN + DE) loaded locally
 - `App/NeurAIncClassifier.py` – TF-IDF vectorizer (max 500 features) + DecisionTreeClassifier
 - `App/Main.py` – main loop (mic → STT → classify → print result)
 - Data files:
@@ -23,12 +30,9 @@ We wanted something simple that can interrupt that script before it’s too late
   - `dataPos.txt` – safe call examples
   - `App/data/training_data.csv` – combined dataset (207 rows after cleaning)
 
-Tested accuracy on our dataset: ~0.81 (5-fold CV).
+Sanity check (on shipped CSV, 5-fold CV): **~0.81 ± 0.06** accuracy with TF-IDF + DecisionTree.
 
 ## Run
 ```bash
 pip install vosk scikit-learn pandas pyaudio
 python App/Main.py
-
-Team
-Tony Li
