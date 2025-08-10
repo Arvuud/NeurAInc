@@ -36,3 +36,6 @@ Sanity check (on shipped CSV, 5-fold CV): **~0.81 ± 0.06** accuracy with TF-IDF
 ```bash
 pip install vosk scikit-learn pandas pyaudio
 python App/Main.py
+
+## Credits
+Creative Commons — Attribution 3.0 Unported— CC BY 3.0
