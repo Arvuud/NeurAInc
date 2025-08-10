@@ -11,7 +11,7 @@ Built in 24 hours at the Global AI Hackathon 2025. Goal: warn people about scam 
 ## Languages (current)
 - English 
 - German 
-More languages can be added by dropping the corresponding Vosk model into `App/model/` and pointing the loader to it.
+- More languages can be added by dropping the corresponding Vosk model into `App/model/` and pointing the loader to it.
 
 ## Quick try
 Say: “This is Microsoft Support. Your account is at risk. Press 1.”  
@@ -36,3 +36,5 @@ Sanity check (on shipped CSV, 5-fold CV): **~0.81 ± 0.06** accuracy with TF-IDF
 ```bash
 pip install vosk scikit-learn pandas pyaudio
 python App/Main.py
+
+
