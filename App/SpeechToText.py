@@ -34,7 +34,7 @@ from vosk import Model, KaldiRecognizer
 
 def textToSpeech():
     print("Starting textToSpeech")
-    model = Model(r"model/vosk-model-small-en-us-0.15/vosk-model-small-en-us-0.15")
+    model = Model(r"model/vosk-model-en-us-0.22-lgraph")
     recognizer = KaldiRecognizer(model, 16000)
 
     mic = pyaudio.PyAudio()
