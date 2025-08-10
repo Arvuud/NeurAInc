@@ -67,7 +67,8 @@ Refund;malicious
 Claim your prize;malicious
 You’ve won the lottery;malicious
 Compensation;malicious
-IRS / Revenue Service;malicious
+IRS;malicious
+Revenue Service;malicious
 Bank account verification;malicious
 Wire transfer;malicious
 Bitcoin;malicious
@@ -75,7 +76,8 @@ Crypto wallet;malicious
 Do not hang up;malicious
 Keep this confidential;malicious
 Verify your identity;malicious
-We need your PIN/password;malicious
+We need your PIN;malicious
+We need your password;malicious
 Please confirm your full name address and date of birth;malicious
 Police Department;malicious
 FBI;malicious

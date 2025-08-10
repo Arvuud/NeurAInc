@@ -1,4 +1,5 @@
 import NeurAIncClassifier as NC
+import SpeechToText as STT
 
 classifier = NC.NeurAIncClassifier()
 classifier.train("data/training_data.csv")
@@ -19,7 +20,9 @@ elif randomUserInput == "exit":
 
 
 if runProgramm:
-    input = ("Microsoft Customer Servicer here,"
-             "we really need to talk about your pc, this situation is really concerning")
+    # "Microsoft Customer Servicer here,"
+    #              "we really need to talk about your pc, this situation is really concerning"
+    input = (STT.textToSpeech())
     result = classifier.predict(input)
+    print(input)
     print(result)
