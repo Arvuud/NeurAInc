@@ -36,13 +36,3 @@ Sanity check (on shipped CSV, 5-fold CV): **~0.81 ± 0.06** accuracy with TF-IDF
 ```bash
 pip install vosk scikit-learn pandas pyaudio
 python App/Main.py
-
-## Author
-Tony Li — Solo project (STT integration, dataset prep, classifier, testing, demo)
-*Built solo in 24 hours at the Global AI Hackathon 2025.*
-
-## Acknowledgments
-- Vosk (offline speech-to-text)
-- scikit-learn (TF-IDF, DecisionTree)
-- Public scam transcript sources (see repo)
-
