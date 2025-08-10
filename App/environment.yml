@@ -1,0 +1,18 @@
+name: speech-to-text-env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - portaudio
+  - pip:
+    - pyaudio==0.2.11
+    - vosk==0.3.45
+    - numpy
+    - scipy
+    - pandas>=1.5.0
+    - scikit-learn>=1.2.0
+    - wave
+    - threading-utils
+    - queue-manager
