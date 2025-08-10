@@ -1,4 +1,7 @@
-import NeurAIncClassifier
+import NeurAIncClassifier as NC
+
+classifier = NC.NeurAIncClassifier()
+classifier.train("data/training_data.csv")
 
 print("-----NeurAInc-----\n")
 print("Press any key and/or [enter] to start recording the call.\n"
@@ -18,8 +21,5 @@ elif randomUserInput == "exit":
 if runProgramm:
     input = ("Microsoft Customer Servicer here,"
              "we really need to talk about your pc, this situation is really concerning")
-
-    classifier = NeurAIncClassifier()
-    result = classifier.predict('project/src/main/resources/data/training_data.csv',
-                               input)
+    result = classifier.predict(input)
     print(result)

@@ -20,7 +20,7 @@ class NeurAIncClassifier:
         self.isTrained = True
         print("The model has been trained")
 
-    def predict(self, csv_file, input_text):
+    def predict(self, input_text):
         if not self.isTrained:
             raise RuntimeError("Trained model has not been trained")
 
