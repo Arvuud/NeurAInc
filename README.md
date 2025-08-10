@@ -10,6 +10,7 @@ Built in 24 hours at the Global AI Hackathon 2025. Goal: warn people about scam 
 
 ## Languages (current)
 - English 
+- German
 - More languages can be added by dropping the corresponding Vosk model into `App/model/` and pointing the loader to it.
 
 ## Quick try
