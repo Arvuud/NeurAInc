@@ -1,27 +1,28 @@
+text;header
 Congratulations You've been selected for an exclusive offer;malicious
-Hi there this is [Name] from [Company] We have a special deal just for you;malicious
+Hi there this is Rajid from Microsoft We have a special deal just for you;malicious
 This is an important message regarding your account security;malicious
 You've won a free vacation Press 1 to claim your prize;malicious
 We noticed some suspicious activity on your account Please verify your details;malicious
 This is your final notice to claim your reward;malicious
-Hello this is [Name] from the IRS We need to discuss your tax status;malicious
+Hello this is Jose from the IRS We need to discuss your tax status;malicious
 You are eligible for a low-interest credit card offer;malicious
 This is an urgent call about your computer's security;malicious
 We have an amazing investment opportunity just for you;malicious
 You've been pre-approved for a loan Press 2 to speak with an agent;malicious
-This is [Name] from Microsoft Support Your computer has been compromised;malicious
+This is Microsoft Support Your computer has been compromised;malicious
 You've won a free gift card Just answer a few questions to claim it;malicious
 This is an important message about your warranty expiring soon;malicious
-Hello this is [Name] from [Tech Company] We need to update your software;malicious
+Hello this is Paypal We need to update your software;malicious
 You've been selected for a government grant Press 1 to proceed;malicious
 This is an urgent message about your social security number;malicious
 We have a special offer on insurance plans just for you;malicious
-This is [Name] from [Bank] There's been unusual activity on your account;malicious
+This is mister Cunningham from Lehman Brothers There's been unusual activity on your account;malicious
 You've won a free cruise Just pay the port fees to claim it;malicious
 This is an important message about your health insurance;malicious
-Hello this is [Name] from [Charity] We need your donation today;malicious
+Hello this is Michaela from Greenpeace We need your donation today;malicious
 You've been selected for a free trial of our product;malicious
-This is [Name] from [Company] We need to confirm your personal details;malicious
+This is Rania from Tesla We need to confirm your personal details;malicious
 You've won a free shopping spree Press 1 to claim your prize now;malicious
 This is Elon Musk I'm giving away free Teslas to random people You're one of them;malicious
 You've inherited a castle in Scotland Please provide your details to claim it;malicious
@@ -53,6 +54,27 @@ Hello this is Harper from the retail services You have a special discount waitin
 Hi there this is Elijah from the entertainment services You've won free tickets to a show;malicious
 Hello this is Abigail from the legal services We need to discuss an important matter with you;malicious
 Hi this is Benjamin from the real estate services We have a great property deal for you;malicious
+Did you miss me? I am so lonely;malicious
+Can you send me a quick code to help me log back into my account?;malicious
+I accidentally sent a package to your address can you forward it to me?;malicious
+I am stranded abroad and need money for my flight home;malicious
+Your friend told me to contact you can we talk here?;malicious
+I have an urgent business proposal that will benefit both of us;malicious
+I saw your profile and I think we could build a great future together;malicious
+Can you keep this confidential? It is a matter of great importance;malicious
+Please pay the small processing fee so we can release your prize;malicious
+Your payment failed please update your billing information immediately;malicious
+I need your help moving a large sum of money from my country;malicious
+I’m a soldier currently deployed overseas I need your assistance;malicious
+We are hiring urgently for a high-paying remote job No experience needed;malicious
+Your account will be permanently locked unless you confirm your identity;malicious
+Kindly click the link below to prevent service interruption;malicious
+My uncle left you in his will please send your bank details;malicious
+We noticed a login to your account from a new device in another country;malicious
+Your package is waiting at the depot please pay the customs fee;malicious
+I can double your money in 24 hours just send me your investment;malicious
+I am a wealthy widow seeking someone to inherit my fortune;malicious
+Click here to claim your free cryptocurrency before it expires;malicious
 Urgent;malicious
 Immediate action required;malicious
 Final notice;malicious
