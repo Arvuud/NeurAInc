@@ -1,5 +1,4 @@
 # NeurAInc — Conversational vital signs for scam calls
-**One-Pager (Technical Summary) · Solo Build**
 
 ---
 
