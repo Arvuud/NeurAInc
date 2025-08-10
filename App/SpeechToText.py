@@ -33,7 +33,7 @@ import pyaudio
 from vosk import Model, KaldiRecognizer
 
 def textToSpeechFromEnglish():
-    print("Starting textToSpeech")
+    print("Starting SpeechToText")
     model = Model(r"model/vosk-model-small-en-us-0.15")
     recognizer = KaldiRecognizer(model, 16000)
 
@@ -51,8 +51,8 @@ def textToSpeechFromEnglish():
             return text[14:-3]
 
 def textToSpeechFromGerman():
-    print("Starting textToSpeech")
-    model = Model(r"model/vosk-model-small-de-0.15")
+    print("Starting SpeechToText")
+    model = Model(r"model/vosk-model-small-de-0.15/vosk-model-small-de-0.15")
     recognizer = KaldiRecognizer(model, 16000)
 
     mic = pyaudio.PyAudio()
@@ -69,7 +69,7 @@ def textToSpeechFromGerman():
             return text[14:-3]
 
 def textToSpeechFromIndianEnglish():
-    print("Starting textToSpeech")
+    print("Starting SpeechToText")
     model = Model(r"model/vosk-model-small-en-in-0.4")
     recognizer = KaldiRecognizer(model, 16000)
 
